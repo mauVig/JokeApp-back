@@ -1,0 +1,52 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "backend-chiste",
+      "version": "1.0.0",
+      "description": "",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "pnpm nodemon index.js"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "D:\\Paginas-en-D\\proj\\chistes\\backend"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "D:\\.pnpm-store\\v3",
+    "virtualStoreDir": "D:\\Paginas-en-D\\proj\\chistes\\backend\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "D:\\Paginas-en-D\\proj\\chistes\\backend",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "expreress is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npmjs.org/expreress"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "expreress",
+    "spec": {
+      "fetchSpec": "latest",
+      "name": "expreress",
+      "type": "tag"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/expreress: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/expreress: Not Found - 404\n    at RetryOperation._fn (C:\\Users\\mauro\\AppData\\Roaming\\nvm\\v14.19.1\\node_modules\\pnpm\\dist\\pnpm.cjs:84538:19)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}
