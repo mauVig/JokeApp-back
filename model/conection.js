@@ -1,6 +1,7 @@
 import mongodb from 'mongodb'
-
-const client = new mongodb.MongoClient('mongodb+srv://Dadu:DtX4gfhZuREDDtm@cluster0.so3wn.mongodb.net/?retryWrites=true&w=majority')
+import dotenv from 'dotenv'
+dotenv.config()
+const client = new mongodb.MongoClient(process.env.MONGO_SER)
 
 
 export const conection = async (callbak) => {

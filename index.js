@@ -1,6 +1,9 @@
 import express from 'express'
 import router from './router/chistes.router.js'
 import cors from 'cors'
+import dotenv from 'dotenv' 
+
+dotenv.config()
 
 const app = express()
 
@@ -12,6 +15,6 @@ app.use('/jokes',router)
 
 
 
-app.listen(80, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log('Server on!!!')
 })
