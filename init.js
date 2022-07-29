@@ -107,7 +107,7 @@ async function insert(obj, coll) {
 async function conection(callbak) {
   await client.connect();
 
-  const result = await callbak(client.db('tellJokes'));
+  const result = await callbak(client.db(proocess.env.DB_NAME));
 
   //await client.close()
 
