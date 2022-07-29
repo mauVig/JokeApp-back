@@ -1,16 +1,16 @@
 import express from 'express';
 import mongodb from 'mongodb';
 import bcrypt from 'bcrypt';
+import dotenv from 'dotenv' 
+dotenv.config()
 
-const client = new mongodb.MongoClient(
-  'mongodb+srv://Dadu:DtX4gfhZuREDDtm@cluster0.so3wn.mongodb.net/?retryWrites=true&w=majority'
-);
+const client = new mongodb.MongoClient(process.env.MONGO_SER);
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.listen(90, () => {
+app.listen(process.env.PORT, () => {
   // console.log("Server ON!")
 
   cargarChistes()
